@@ -4,13 +4,13 @@ import MouseListener.GlobalMouseListener;
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class HillBillyChainSawMacroThread {
+public class HillBillyChainSawMacro {
     private MouseClicker mouseClicker;
     private Timer timer;
     private Mouse2Task mouse2Task;
     private GlobalMouseListener globalMouseListener;
 
-    private HillBillyChainSawMacroThread() {
+    private HillBillyChainSawMacro() {
         mouseClicker = new MouseClicker();
         timer = new Timer();
         mouse2Task = new Mouse2Task();
@@ -40,7 +40,7 @@ public class HillBillyChainSawMacroThread {
     }
 
     public static void main(String[] args) {
-        HillBillyChainSawMacroThread macroThread = new HillBillyChainSawMacroThread();
+        HillBillyChainSawMacro macroThread = new HillBillyChainSawMacro();
         macroThread.ninetyNinePercentChainsaw();
     }
 }
