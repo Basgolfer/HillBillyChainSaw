@@ -18,7 +18,7 @@ public class HillBillyChainSawMacro {
     }
 
     private void ninetyNinePercentChainsaw() {
-        mouseClicker.pressRightMouseFor(2000);
+        mouseClicker.pressRightMouseFor(2375);
         timer.scheduleAtFixedRate(mouse2Task, 0, 1);
     }
 
@@ -29,8 +29,8 @@ public class HillBillyChainSawMacro {
     class Mouse2Task extends TimerTask {
 
         public void run() {
-            mouseClicker.pressRightMouseFor(100);
-            mouseClicker.releaseRightMouseFor(150);
+            mouseClicker.pressRightMouseFor(32);
+            mouseClicker.releaseRightMouseFor(41);
             if (leftMouseButtonIsLastClicked()) {
                 System.out.println("Exiting Program");
                 timer.cancel();
